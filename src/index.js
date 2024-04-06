@@ -8,6 +8,10 @@ import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter,Routes,Route } from "react-router-dom";
 import HomePage from "./HomePage";
 import AiBotHomePage from "./AiBotHomePage";
+import History from "./models/History";
+import English from "./models/English";
+import Science from "./models/Science";
+import Maths from "./models/Maths";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -16,6 +20,10 @@ ReactDOM.render(
         <Route path="/" element={<HomePage />} />
         <Route path="/aibots" element={<AiBotHomePage />} />
         <Route path="/chats" element={<App />} />
+        <Route path="/aibots/english" element={<English />} />
+        <Route path="/aibots/history" element={<History />} />
+        <Route path="/aibots/science" element={<Science />} />
+        <Route path="/aibots/maths" element={<Maths />} />
       </Routes>
     </Provider>
   </BrowserRouter>,
