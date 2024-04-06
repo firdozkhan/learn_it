@@ -9,6 +9,7 @@ import Login from './Login';
 import { useEffect } from 'react';
 import { auth } from './firebase';
 import { login, logout } from './features/userSlice'
+import HomePage from './HomePage';
 
 function App() {
   const dispatch = useDispatch()
@@ -40,6 +41,7 @@ function App() {
         <>
           <Sidebar />
           <Chat />
+          {/* <HomePage /> */}
         </>
 
       ) : (
