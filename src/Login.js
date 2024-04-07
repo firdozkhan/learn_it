@@ -12,7 +12,7 @@ const Login = () => {
     return (
         <div className='login' >
             <div className="login__logo">
-                <img src="https://www.freepnglogos.com/uploads/discord-logo-png/discord-logo-logodownload-download-logotipos-1.png" alt="discord logo" />
+                <img src="https://www.shutterstock.com/image-photo/learn-learning-education-knowledge-wisdom-260nw-372270265.jpg" alt="logo" />
             </div>
 
             <Button onClick={signIn}>Sign In</Button>

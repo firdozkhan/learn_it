@@ -45,7 +45,7 @@ const Sidebar = () => {
     return (
         <div className='sidebar' >
             <div className="sidebar__top">
-                <h3>Clever Programmer</h3>
+                <h3>Learn-It!</h3>
                 <ExpandMoreIcon />
             </div>
 
@@ -53,7 +53,7 @@ const Sidebar = () => {
                 <div className="sidebar__channelsHeader">
                     <div className="sidebar__header">
                         <ExpandMoreIcon />
-                        <h4>Text Channels</h4>
+                        <h4>Subject Community</h4>
                     </div>
 
                     <AddIcon onClick={handleAddChannel} className='sidebar__addChannel' />
@@ -70,7 +70,8 @@ const Sidebar = () => {
             <div className="sidebar__voice">
                 <SignalCellularAltIcon className='sidebar__voiceIcons' fontSize='large' />
                 <div className="sidebar__voiceInfo">
-                    <h3>Voice Connected</h3>
+                    <a href="http://localhost:3000/" target='_blank'>Aaja bhai</a>
+                    <h3>Video Call</h3>
                     <p>Stream</p>
                 </div>
 
@@ -80,16 +81,13 @@ const Sidebar = () => {
                 </div>
             </div>
             <div className="sidebar__profile">
-                <Avatar src={user.photo} onClick={() => auth.signOut()} />
                 <div className="sidebar__profileInfo">
                     <h3>{user.displayName}</h3>
                     <p>#{user.uid.substring(0, 5)}</p>
                 </div>
 
                 <div className="sidebar__profileIcons">
-                    <MicIcon />
-                    <HeadsetIcon />
-                    <SettingsIcon />
+                <Avatar src={user.photo} onClick={() => auth.signOut()} />
                 </div>
             </div>
         </div>

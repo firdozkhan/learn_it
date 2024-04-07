@@ -1,7 +1,5 @@
 import React from "react";
 import "./output.css";
-import Sidebar from "./Sidebar";
-import Chat from "./Chat";
 import { NavLink } from "react-router-dom";
 
 const HomePage = () => {
@@ -26,12 +24,12 @@ const HomePage = () => {
               technology, it engages in conversations, provides instant
               feedback, and tailors learning experiences to individual needs.
             </p>
-            <NavLink
-              to="/aibots"
+            <a href="http://localhost:5173/"
+              
               className="text-xl font-semibold text-white rounded-xl bg-sky-700 hover:bg-sky-500 py-3 px-3"
             >
               Explore
-            </NavLink>
+            </a>
           </div>
         </div>
 
@@ -52,7 +50,7 @@ const HomePage = () => {
             </p>
             <NavLink
               to="/chats"
-              className="text-xl font-semibold text-white rounded-xl bg-sky-700 hover:bg-sky-500 py-3 px-3"
+              className="text-xl font-semibold text-white rounded-xl bg-sky-700 hover:bg-sky-500 py-3 px-3 mt-5"
             >
               Explore
             </NavLink>
